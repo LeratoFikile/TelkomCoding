@@ -1,0 +1,215 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header Styles */
+header {
+    background-color: #0078D4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffcc00;
+}
+
+.register-btn {
+    background-color: #FF6600;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.register-btn:hover {
+    background-color: #e55d00;
+}
+
+/* Section Styles */
+.features {
+    padding: 50px 5%;
+    background-color: #fff;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 36px;
+    color: #0078D4;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Feature Grid */
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.feature-item {
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.feature-item img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+}
+
+.feature-item h3 {
+    color: #0078D4;
+    font-size: 24px;
+    margin: 20px 0 10px;
+    font-weight: bold;
+}
+
+.feature-item p {
+    color: #666;
+    font-size: 16px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #0078D4;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .section-title {
+        font-size: 28px;
+    }
+
+    
+
+}
+
+.floating-icon {
+    position: fixed;
+    bottom: 20px; /* Adjust the distance from the bottom as needed */
+    right: 20px;  /* Adjust the distance from the right as needed */
+    z-index: 1000; /* Ensure the icon is on top of other content */
+}
+
+.floating-icon img {
+    width: 50px;  /* Adjust the size of the icon */
+    height: 50px; /* Adjust the size of the icon */
+    cursor: pointer; /* Change the cursor to a pointer on hover */
+    border-radius: 50%; /* Optional: make the icon circular */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Optional: add a shadow for better visibility */
+}
+    /* Icon styling */
+    .chat-icon {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+        z-index: 1000;
+    }
+
+    .chat-icon img {
+        width: 100%;
+        height: 100%;
+    }
+
+    /* Pop-up form modal */
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 1000;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .modal-content {
+        background-color: #fff;
+        margin: 15% auto;
+        padding: 20px;
+        width: 400px;
+        border-radius: 10px;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .close {
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+    }
